@@ -49,7 +49,7 @@ body {
 .site-header__contact {
     margin-right: 2rem;
 }
-/* ==================== 2. main styles  ================================ */
+/* ==================== 2. main - home styles  ================================ */
 .site-main {
     background-color: #fff;
     font-size: 1.2rem;
@@ -95,8 +95,160 @@ body {
     background-color: #e9c46a;
 }
 
+/* ==================== 3. main - product styles  ================================ */
+.site-main__product {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.site-main__col {
+    padding: 0 5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.site-main__col-1 {
+    background-color: #e9c46a;
+    text-align: center;
+    color: #264653;
+}
+
+.site-main__col-2 {
+    background-color: #264653;
+    text-align: center;
+    color: #e9c46a;
+}
+
+.site-main__content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 5rem;
+}
+.site-main__content-img {
+    height: 20rem;
+    width: 20rem;
+}
+
+.site-main__img-container {
+    background-color: #fff;
+    padding: 2rem;
+}
 /* ==================== 2. footer styles  ================================ */
 .site-footer {
     background-color: #e9c46a;
     min-height: 30vh;
+    max-width: 100%;
+    color: #264653;
 }
+
+.site-footer__contact,
+.site-footer__contact-col1 {
+    display: flex;
+    flex-flow: row wrap;
+    min-height: inherit;
+}
+
+.site-footer__contact {
+    justify-content: center;
+}
+
+.site-footer__contact-col1 {
+    flex: 1.3 0 0;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.site-footer__logo {
+    flex-grow: 1;
+}
+
+
+.site-footer__nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.site-footer__link:link,
+.site-footer__link:visited {
+    color: #264653;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.site-footer__link:hover,
+.site-footer__link:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-footer__date {
+    flex-grow: 1;
+}
+
+.site-footer__date::before {
+    content: "©";
+}
+
+/* ==================== 2. footer-contact styles  ================================ */
+
+.site-footer__contact-col2 {
+    max-width: 100%;
+    min-height: inherit;
+    background-color: #e9c46a;
+    flex: 0.7 0 0;
+}
+
+.site-footer__form {
+    display: flex;
+    min-height: inherit;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    padding: 2.5rem 0 2.5rem 0;
+}
+
+.site-footer__form-heading {
+    font-size: 1.5rem;
+}
+
+.site-footer__btn {
+    display: inline-block;
+    width: 50%;
+    padding: 0.4rem 0.8rem;
+    background-color: #264653;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    border-width: 0;
+}
+
+.site-footer__btn:hover {
+    background-color: #fff;
+    color: #264653;
+    cursor: pointer;
+}
+
+.site-footer__label-email {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.site-footer__email {
+    border-width: 0;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    width: 50%;
+}
+

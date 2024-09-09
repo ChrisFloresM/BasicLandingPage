@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title></title>
+		<title>First Landing Page</title>
 		<meta charset="UTF-8">
 		<link type="text/css" rel="stylesheet" href="css/style.css">
 	</head>
@@ -27,11 +27,101 @@
 				</p>
 				<a href="#product" class="site-main__link">Wait for it!</a>
 			</div>
+			<div id="product" class="site-main__product">
+				<div id="col-1" class="site-main__col site-main__col-1 style_1">
+					<div class="site-main__content">
+						<h2 class="site-main__content-heading">Harder</h2>
+						<p class="site-main__content-text">Lorem ipsum dolor sit amet</p>
+					</div>
+					<div class="site-main__img-container">
+						<img class="site-main__content-img" alt="product image" src="img/laptop-logo.png" title="product image">
+					</div>
+				</div>
+				<div id="col-2" class="site-main__col site-main__col-2 style_2">
+					<div class="site-main__content">
+						<h2 class="site-main__content-heading">Better</h2>
+						<p class="site-main__content-text">Lorem ipsum dolor sit amet</p>
+					</div>
+					<div class="site-main__img-container">
+						<img class="site-main__content-img" alt="product image" src="img/headphone-logo.png" title="product image">
+					</div>
+				</div>
+			</div>
+			<div id="product-2" class="site-main__product">
+				<div id="col-3" class="site-main__col site-main__col-2">
+					<div class="site-main__content">
+						<h2 class="site-main__content-heading">Faster</h2>
+						<p class="site-main__content-text">Lorem ipsum dolor sit amet</p>
+					</div>
+					<div class="site-main__img-container">
+						<img class="site-main__content-img" alt="product image" src="img/product-logo.png" title="product image">
+					</div>
+				</div>
+				<div id="col-4" class="site-main__col site-main__col-1">
+					<div class="site-main__content">
+						<h2 class="site-main__content-heading">Stronger</h2>
+						<p class="site-main__content-text">Lorem ipsum dolor sit amet</p>
+					</div>
+					<div class="site-main__img-container">
+						<img class="site-main__content-img" alt="product image" src="img/clenaer.png" title="product image">
+					</div>
+				</div>
+			</div>
+			<div id="product-3" class="site-main__product">
+				<div id="col-5" class="site-main__col site-main__col-1 style_1">
+					<div class="site-main__content">
+						<h2 class="site-main__content-heading">Newer</h2>
+						<p class="site-main__content-text">Lorem ipsum dolor sit amet</p>
+					</div>
+					<div class="site-main__img-container">
+						<img class="site-main__content-img" alt="product image" src="img/laptop-logo.png" title="product image">
+					</div>
+				</div>
+				<div id="col-6" class="site-main__col site-main__col-2 style_2">
+					<div class="site-main__content">
+						<h2 class="site-main__content-heading">Cleaner</h2>
+						<p class="site-main__content-text">Lorem ipsum dolor sit amet</p>
+					</div>
+					<div class="site-main__img-container">
+						<img class="site-main__content-img" alt="product image" src="img/headphone-logo.png" title="product image">
+					</div>
+				</div>
+			</div>
 		</main>
 		<!-- Ends main section -->
 		<!-- Start footer section -->
 		<footer class="site-footer">
-			<p>The footer will be here</p>
+			<div id="contact" class="site-footer__contact">
+				<div id="contact-col1" class="site-footer__contact-col1">
+					<a id="footer_link_logo" href="#home" class="site-footer__link site-footer__logo" >
+						<img title="logo of the site" class="site-footer__logo--img" src="img/logo.webp" alt="logo of the site" height="64" width="64">
+					</a>
+					<div class="site-footer__nav">
+						<a id="footer_link_home" href="#home" class="site-footer__link site-footer__home" >Home</a>
+						<a id="footer_link_product" href="#product" class="site-footer__link site-footer__product">Product</a>
+						<a id="footer_link_contact" href="#contact" class="site-footer__link site-footer__contact">Contact</a>
+					</div>
+					<p class="site-footer__date">
+						2024
+					</p>
+				</div>
+				<div id="contact-col2" class="site-footer__contact-col2">
+					<form class="site-footer__form">
+						<h5 class="site-footer__form-heading">Sign up for the waiting list</h5>
+						<div class="site-footer__input-container site-footer__input-container-email">
+							<label for="email" class="site-footer__label-email">Email</label>
+							<input type="email" id="email" class="site-footer__email" placeholder="you@example.com" required>
+						</div>
+						<div class="site-footer__input-container site-footer__input-container-text">
+							<label for="checkbox">
+								<input type="checkbox" id="checkbox" class="site-footer__check" required>
+								I agree to receive emails
+							</label>
+						</div>
+						<button type="submit" class="site-footer__btn">Sign Up</button>
+					</form>
+				</div>
+			</div>
 		</footer>
 		<!-- Ends footer section -->
 	</body>
