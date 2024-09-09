@@ -21,7 +21,7 @@ body {
 .site-header__nav {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 100%;
     min-height: inherit;
     align-items: center;
@@ -38,6 +38,7 @@ body {
 .site-header__link:hover,
 .site-header__link:active {
     text-decoration: underline;
+    color: #e9c46a;
     cursor: pointer;
 }
 
@@ -50,18 +51,52 @@ body {
 }
 /* ==================== 2. main styles  ================================ */
 .site-main {
-    background-color: #2a9d8f;
+    background-color: #fff;
+    font-size: 1.2rem;
     min-height: 60vh;
+}
+
+.site-main__home {
+    color: #264653;
+    min-height: inherit;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.site-main__heading {
+    text-transform: uppercase;
+}
+
+.site-main__text {
+    width: 100rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+.site-main__link:link,
+.site-main__link:visited {
+    background-color: #264653;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    color: #e9c46a;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    border: 1px solid #264653;
+}
+
+.site-main__link:hover,
+.site-main__link:active {
+    color: #264653;
+    background-color: #e9c46a;
 }
 
 /* ==================== 2. footer styles  ================================ */
 .site-footer {
     background-color: #e9c46a;
     min-height: 30vh;
-}
-
-/* 3. p styles */
-p {
-    font-size: 1.5rem;
-    color: white;
 }
